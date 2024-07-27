@@ -54,7 +54,7 @@ CYPHER_GENERATION_PROMPT = PromptTemplate(
 llm_chain = GraphCypherQAChain.from_llm(
     cypher_llm=ChatOpenAI(temperature=0,
                           #openai_api_key=api_key,
-                          model='gpt-4'),
+                          model='gpt-4o-mini'),
     qa_llm=ChatOpenAI(temperature=0,
                       #openai_api_key=api_key,
                       model='gpt-3.5-turbo'),
